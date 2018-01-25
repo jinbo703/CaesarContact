@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  CaesarContact
+//  Contacts
 //
-//  Created by PAC on 12/3/17.
-//  Copyright © 2017 PAC. All rights reserved.
+//  Created by John Nik on 11/25/17.
+//  Copyright © 2017 johnik703. All rights reserved.
 //
 
 import UIKit
@@ -16,6 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        window = UIWindow()
+        window?.makeKeyAndVisible()
+        
+        let navController = UINavigationController(rootViewController: ViewController())
+        window?.rootViewController = navController
+        
         return true
     }
 
